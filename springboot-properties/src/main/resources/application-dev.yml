@@ -1,4 +1,17 @@
-## 家乡属性 Dev
-home.province=ZheJiang
-home.city=WenLing
-home.desc=dev: I'm living in ${home.province} ${home.city}.
+## 家乡属性 Dev 
+
+home: 
+  province: 江苏
+  city:  泰州
+  desc:  I'm living in ${home.province} ${home.city}
+
+user:
+  id: ${random.int[0,2]}
+  uuid: ${random.uuid}
+  age: ${random.int[0,2]}
+  work: ${random.value}
+
+info:
+  name: 叶剑
+  age:  27
+  location: 上海

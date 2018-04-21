@@ -7,7 +7,11 @@ package org.spring.springboot.result;
  */
 public class GlobalErrorInfoException extends Exception {
 
-    private ErrorInfoInterface errorInfo;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8333003839125916801L;
+	private ErrorInfoInterface errorInfo;
 
     public GlobalErrorInfoException (ErrorInfoInterface errorInfo) {
         this.errorInfo = errorInfo;

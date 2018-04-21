@@ -12,7 +12,7 @@ public class UserProperties {
     /**
      * 用户 ID
      */
-    private Long id;
+    private int id;
 
     /**
      * 年龄
@@ -22,18 +22,18 @@ public class UserProperties {
     /**
      * 用户名称
      */
-    private String desc;
+    private String work;
 
     /**
      * 用户 UUID
      */
     private String uuid;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -45,12 +45,12 @@ public class UserProperties {
         this.age = age;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getWork() {
+        return work;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setWork(String work) {
+        this.work = work;
     }
 
     public String getUuid() {
@@ -67,7 +67,7 @@ public class UserProperties {
         return "UserProperties{" +
                 "id=" + id +
                 ", age=" + age +
-                ", desc='" + desc + '\'' +
+                ", desc='" + work + '\'' +
                 ", uuid='" + uuid + '\'' +
                 '}';
     }

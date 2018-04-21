@@ -1,6 +1,7 @@
 package org.spring.springboot.property;
 
-import org.junit.Assert;
+import javax.annotation.Resource;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -25,6 +26,12 @@ public class PropertiesTest {
 
     @Autowired
     private HomeProperties homeProperties;
+    
+    @Autowired
+    private Info info;
+    
+    @Resource
+    private City city;
 
     @Test
     public void getHomeProperties() {
@@ -35,5 +42,14 @@ public class PropertiesTest {
     public void randomTestUser() {
         LOGGER.info("\n\n" + userProperties.toString() + "\n");
     }
-
+    
+    @Test
+    public void getInfo() {
+        LOGGER.info("\n\n" + info.toString() + "\n");
+    }
+    
+    @Test
+    public void getCity() {
+    	LOGGER.info("\n\n" + city.toString() + "\n");
+    }
 }
